@@ -1,0 +1,40 @@
+.navbarContainer {
+  width: 100%;
+  border: 2px solid black;
+  background-color: #2a2939;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-left: 25px;
+}
+
+.navComponents {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.navbarList {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  list-style: none;
+}
+
+.navItem {
+  margin-left: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.user {
+  position: absolute;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}

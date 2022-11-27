@@ -1,0 +1,182 @@
+.mainContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.containers img{
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    /* background-color: #e3deded4; */
+    background-color: #e3ddd8d8;
+    /* opacity: 0.5; */
+    border-radius: 30px;
+}
+
+.FormBlock{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginTitle{
+    font-size: 28px;
+}
+
+form{
+    margin-top: 30px;
+}
+
+/* Email */
+.email-text{
+    font-size: 20px;
+}
+
+.emailBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -3px;
+    border-radius: 6px;
+    border-width: 0px;
+    border-color: white;
+    width: 250px;
+    height: 34px;
+}
+
+.emailBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+/* Password */
+.password{
+    margin-top: 20px;
+}
+.password-text{
+    font-size: 20px;
+}
+
+.passwordBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -4px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: white;
+    width: 250px;
+    height: 34px;
+}
+
+.passwordBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+/* .fa-unlock-alt{
+    margin-left: -15px;
+} */
+
+.forgotton{
+    margin-top: 10px;
+}
+
+.forgetPassword{
+    font-size: 14px;
+    display: flex;
+    justify-content: right;
+}
+
+.forgetPassword:hover{
+    cursor: pointer;
+    outline: none;
+}
+
+/* Login Button */
+.loginButton{
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button{
+    padding: 5px 5px;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.08);
+}
+
+input:focus{
+    box-shadow: 0 0 3px #171818;
+    outline: none;
+}
+
+.login-button:focus{
+    box-shadow: 0 0 3px #171818;
+    outline: none;
+}
+
+.newUser{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-user{
+    cursor: pointer;
+}
+
+.new-user:hover{
+    color: black;
+}
+
+.signUp{
+    cursor: pointer;
+}
+
+.signUp:hover{
+    color:red;
+}
+
+.para-margin{
+    margin: 0px 0px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands{
+    margin: 0px 10px;
+    cursor: pointer;
+}

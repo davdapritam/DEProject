@@ -1,0 +1,62 @@
+<div class="mainContainer">
+    <div class="containers">
+        <div class="box">
+            <div class="FormBlock">
+                <p class="loginTitle para-margin">Login Your Account</p>
+
+                <form (formdata)="loginForm">
+
+                    <div class="email">
+                        <p class="email-text para-margin">Email</p>
+                        <input type="email" formControlName="email" placeholder="example@gmail.com" name=""
+                            class="emailBlock">
+
+                        <p class="text-danger"
+                            *ngIf="loginForm.controls['email'].hasError('required') && loginForm.controls['email'].touched">
+                            Email Required*</p>
+
+                        <p class="text-danger"
+                            *ngIf="loginForm.controls['email'].hasError('email') && loginForm.controls['email'].touched">
+                            InValid Email
+                        </p>
+                    </div>
+
+                    <div class="password">
+                        <p class="password-text para-margin">Password</p>
+                        <input type="password" formControlName="password" name="password"
+                            placeholder="Enter Password..." class="passwordBlock">
+
+                        <p class="text-danger"
+                            *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched">
+                            Password Required*</p>
+
+                    </div>
+
+                    <div class="forgotton">
+                        <p class="forgetPassword para-margin">Forget Password?</p>
+                    </div>
+
+                    <div class="loginButton">
+                        <button type="submit" class="login-button">Login</button>
+                    </div>
+
+                    <div class="newUser">
+                        <p class="para-margin new-user" routerLink="/signup">New User?</p> &nbsp;
+                        <p class="para-margin signUp" routerLink="/signup">Signup</p>
+                    </div>
+
+                    <hr style="background-color:black">
+
+                    <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
