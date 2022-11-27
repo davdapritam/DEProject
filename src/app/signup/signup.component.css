@@ -1,0 +1,325 @@
+.mainContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.containers img{
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 740px;
+    /* background-color: #e3deded4; */
+    background-color: #e3ddd8d8;
+    /* opacity: 0.5; */
+    border-radius: 30px;
+}
+
+.FormBlock{
+    width: 600px;
+    height: 500px;
+    max-width: 600px;
+    max-height: 500px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpTitle{
+    font-size: 28px;
+}
+
+.mainForm{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 500px;
+    max-width: 600px;
+    max-height: 500px;
+    margin-top: 30px;
+}
+
+/* Name */
+.name-text{
+    font-size: 20px;
+}
+
+.nameBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -3px;
+    border-radius: 6px;
+    border-width: 0px;
+    border-color: white;
+    width: 280px;
+    height: 34px;
+}
+
+.nameBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+/* Mobile Number */
+.mobileNo{
+    margin-left: 50px;
+}
+
+.mobileNo-text{
+    font-size: 20px;
+}
+
+.mobileBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -3px;
+    border-radius: 6px;
+    border-width: 0px;
+    border-color: white;
+    width: 250px;
+    height: 34px;
+}
+
+.mobileBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+/* Email */
+.email-text{
+    font-size: 20px;
+}
+
+.emailBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -3px;
+    border-radius: 6px;
+    border-width: 0px;
+    border-color: white;
+    width: 280px;
+    height: 34px;
+}
+
+.emailBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+/* Gender */
+.gender{
+    margin-left: 50px;
+}
+.gender-text{
+    font-size: 20px;
+}
+
+.maleRadio{
+    margin-top: 15px;
+}
+
+.maleLabel{
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.femaleLabel{
+    margin-left: 5px;
+}
+
+.maleRadio{
+    margin-top: 15px;
+}
+
+.maleRadio:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.15);
+}
+
+.femaleRadio:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.15);
+}
+
+/* Age */
+.age{
+    margin-left: 43px;
+    width: 80px;
+}
+
+.age-text{
+    font-size: 20px;
+}
+
+.ageBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -3px;
+    border-radius: 6px;
+    border-width: 0px;
+    border-color: white;
+    width: 70px;
+    height: 34px;
+}
+
+/* Address */
+.address-text{
+    font-size: 20px;
+}
+
+.addressBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -4px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: white;
+}
+
+.addressBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+/* Aadharcard Number */
+.aadharCardNo{
+    margin-left: 41px;
+}
+.aadharcard-text{
+    font-size: 20px;
+}
+
+.aadharcardBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -4px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: white;
+    width: 260px;
+    height: 34px;
+}
+
+.aadharcardBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+/* Pancard Number */
+.pancardNo{
+    margin-top: -10px;
+}
+.pancard-text{
+    font-size: 20px;
+}
+
+.pancardBlock{
+    padding: 0px 10px;
+    margin-top: 7px;
+    margin-left: -4px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: white;
+    width: 290px;
+    height: 34px;
+}
+
+.aadharcardBlock:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.02);
+}
+
+
+/* Login Button */
+.signupButton{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-button{
+    padding: 5px 5px;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-button:hover{
+    transition: ease-in-out .1s;
+    transform: scale(1.08);
+}
+
+input:focus{
+    box-shadow: 0 0 3px #171818;
+    outline: none;
+}
+
+.login-button:focus{
+    box-shadow: 0 0 3px #171818;
+    outline: none;
+}
+
+.oldUser{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-user{
+    cursor: pointer;
+}
+
+.new-user:hover{
+    color: black;
+}
+
+.signUp{
+    cursor: pointer;
+}
+
+.signUp:hover{
+    color:red;
+}
+
+.para-margin{
+    margin: 0px 0px;
+}
+
+.icons{
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons > i {
+    font-size: 22px;
+}
+
+.fa-brands{
+    margin: 0px 10px;
+    cursor: pointer;
+}

@@ -22,4 +22,8 @@ export class LoginComponent {
     });
   }
 
+  onSubmit(){
+    console.log("Form",this.loginForm.value)
+  }
+
 }

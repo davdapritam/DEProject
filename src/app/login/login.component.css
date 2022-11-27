@@ -176,6 +176,10 @@ input:focus{
     justify-content: center;
 }
 
+.icons > i{
+    font-size: 22px;
+}
+
 .fa-brands{
     margin: 0px 10px;
     cursor: pointer;

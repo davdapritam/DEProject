@@ -1,1 +1,113 @@
-<p>signup works!</p>
+<div class="mainContainer">
+    <div class="containers">
+        <img src="../../../../assets/loginBackgroung.jpg" alt="">
+
+        <div class="box">
+            <div class="FormBlock">
+                <p class="signUpTitle para-margin">SignUp</p>
+
+                <form [formGroup]="signupForm">
+
+                    <div class="mainForm">
+
+                        <div class="name">
+                            <p class="name-text">Name</p>
+                            <input class="nameBlock" formControlName="name" type="text" name="name">
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['name'].hasError('required') && signupForm.controls['name'].touched">
+                                Name Required*</p>
+                        </div>
+
+                        <div class="mobileNo">
+                            <p class="mobileNo-text">Mobile No.</p>
+                            <input class="mobileBlock" type="text" name="mobileNo" maxlength="13"
+                                formControlName="mobileNo">
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['mobileNo'].hasError('required') && signupForm.controls['mobileNo'].touched">
+                                Mobile No. Required*</p>
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['mobileNo'].hasError('pattern') && signupForm.controls['mobileNo'].touched">
+                                Invalid Mobile No*</p>
+                        </div>
+
+                        <div class="email">
+                            <p class="email-text">Email</p>
+                            <input type="email" formControlName="email" class="emailBlock" name="email">
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['email'].hasError('required') && signupForm.controls['email'].touched">
+                                Email Required*</p>
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['email'].hasError('email') && signupForm.controls['email'].touched">
+                                Invalid Email*</p>
+                        </div>
+
+                        <div class="gender">
+                            <p class="gender-text">Gender</p>
+                            <input class="maleRadio" formControlName="gender" type="radio" name="gender" value="Male"
+                                id="Male">
+                            <label class="maleLabel" for="Male">Male</label>
+                            <input class="femaleRadio" formControlName="gender" type="radio" name="gender"
+                                value="Female" id="Female">
+                            <label class="femaleLabel" for="Female">Female</label>
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['gender'].hasError('required') && signupForm.controls['gender'].touched">
+                                Specify Gender*</p>
+                        </div>
+
+                        <div class="age">
+                            <p class="age-text">Age</p>
+                            <input type="number" formControlName="age" name="age" class="ageBlock">
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['age'].hasError('required') && signupForm.controls['age'].touched">
+                                Age Required*</p>
+                        </div>
+
+                        <div class="address">
+                            <p class="address-text">Address</p>
+                            <textarea class="addressBlock" formControlName="address" name="address" id="" cols="30"
+                                rows="4"></textarea>
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['address'].hasError('required') && signupForm.controls['address'].touched">
+                                Address Required*</p>
+                        </div>
+
+                        <div class="aadharCardNo">
+                            <p class="aadharcard-text">Aadharcard No.</p>
+                            <input type="text" class="aadharcardBlock" formControlName="aadharcardNo"
+                                name="aadharcardNo">
+                            <p class="text-danger"
+                                *ngIf="signupForm.controls['aadharcardNo'].hasError('required') && signupForm.controls['aadharcardNo'].touched">
+                                Aadharcard No. Required*</p>
+                        </div>
+
+                        <div class="pancardNo">
+                            <p class="pancard-text">Pancard No(optional)</p>
+                            <input type="text" formControlName="panNo" class="pancardBlock" name="panNo" id="">
+                        </div>
+
+                    </div>
+
+                    <div class="signupButton">
+                        <button class="signup-button" type="submit">Signup</button>
+                    </div>
+
+                    <div class="oldUser">
+                        <p class="para-margin new-user" routerLink="/login">Already Have Account?</p> &nbsp;
+                        <p class="para-margin signUp" routerLink="/login">Login</p>
+                    </div>
+
+                    <hr style="background-color:black;">
+
+                    <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>

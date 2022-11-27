@@ -1,10 +1,11 @@
 <div class="mainContainer">
     <div class="containers">
+        <img src="../../../../assets/loginBackgroung.jpg" alt="">
         <div class="box">
             <div class="FormBlock">
                 <p class="loginTitle para-margin">Login Your Account</p>
 
-                <form (formdata)="loginForm">
+                <form [formGroup]="loginForm" (submit)="onSubmit()">
 
                     <div class="email">
                         <p class="email-text para-margin">Email</p>
