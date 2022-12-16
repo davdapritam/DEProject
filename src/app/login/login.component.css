@@ -7,8 +7,12 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    background-color: #2A2939;
 }
 
+p, .login-button{
+    color: #2A2939;
+}
 
 .containers img{
     opacity: 0.8;
@@ -26,7 +30,7 @@
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 500px;
+    height: 550px;
     /* background-color: #e3deded4; */
     background-color: #e3ddd8d8;
     /* opacity: 0.5; */
@@ -178,6 +182,7 @@ input:focus{
 
 .icons > i{
     font-size: 22px;
+    color: #2A2939;
 }
 
 .fa-brands{

@@ -1,12 +1,12 @@
 <div class="mainContainer">
     <div class="containers">
-        <img src="../../../../assets/loginBackgroung.jpg" alt="">
+        <img src="../../assets/frame.png" alt="">
 
         <div class="box">
             <div class="FormBlock">
                 <p class="signUpTitle para-margin">SignUp</p>
 
-                <form [formGroup]="signupForm">
+                <form [formGroup]="signupForm" (submit)="onSubmit()">
 
                     <div class="mainForm">
 
@@ -62,29 +62,14 @@
                                 Age Required*</p>
                         </div>
 
-                        <div class="address">
-                            <p class="address-text">Address</p>
-                            <textarea class="addressBlock" formControlName="address" name="address" id="" cols="30"
-                                rows="4"></textarea>
-                            <p class="text-danger"
-                                *ngIf="signupForm.controls['address'].hasError('required') && signupForm.controls['address'].touched">
-                                Address Required*</p>
+                        <div class="occupation">
+                            <p class="occupation-text">Occupation</p>
+                            <select name="occup" class="occupationBlock" id="" formControlName="occupation">
+                                <option value="student">Student</option>
+                                <option value="teacher">Teacher</option>
+                                <option value="developer">Individual Developer</option>
+                            </select>
                         </div>
-
-                        <div class="aadharCardNo">
-                            <p class="aadharcard-text">Aadharcard No.</p>
-                            <input type="text" class="aadharcardBlock" formControlName="aadharcardNo"
-                                name="aadharcardNo">
-                            <p class="text-danger"
-                                *ngIf="signupForm.controls['aadharcardNo'].hasError('required') && signupForm.controls['aadharcardNo'].touched">
-                                Aadharcard No. Required*</p>
-                        </div>
-
-                        <div class="pancardNo">
-                            <p class="pancard-text">Pancard No(optional)</p>
-                            <input type="text" formControlName="panNo" class="pancardBlock" name="panNo" id="">
-                        </div>
-
                     </div>
 
                     <div class="signupButton">

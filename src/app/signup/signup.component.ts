@@ -18,10 +18,12 @@ export class SignupComponent {
       'email': new FormControl('', [Validators.required, Validators.email]),
       'gender': new FormControl('', Validators.required),
       'age': new FormControl('', Validators.required),
-      'address': new FormControl('', Validators.required),
-      'aadharcardNo': new FormControl('', Validators.required),
-      'panNo': new FormControl(''),
+      'occupation':new FormControl('', Validators.required),
       'password': new FormControl('')
     })
+  }
+
+  onSubmit(){
+    console.log(this.signupForm.value)
   }
 }

@@ -7,8 +7,12 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    background-color: #343434;
 }
 
+p, .maleLabel, .femaleLabel,.signup-button, .icons > i{
+    color: #2A2939;
+}
 
 .containers img{
     opacity: 0.8;
@@ -18,31 +22,27 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .box{
+    margin-top: -70px;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 700px;
-    height: 740px;
-    /* background-color: #e3deded4; */
+    height: 600px;
     background-color: #e3ddd8d8;
-    /* opacity: 0.5; */
     border-radius: 30px;
 }
 
 .FormBlock{
     width: 600px;
-    height: 500px;
+    height: 400px;
     max-width: 600px;
     max-height: 500px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .signUpTitle{
@@ -53,7 +53,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 600px;
-    height: 500px;
+    height: 350px;
     max-width: 600px;
     max-height: 500px;
     margin-top: 30px;
@@ -182,71 +182,16 @@
     height: 34px;
 }
 
-/* Address */
-.address-text{
-    font-size: 20px;
-}
-
-.addressBlock{
+/* OCCUPATION */
+.occupationBlock{
     padding: 0px 10px;
     margin-top: 7px;
-    margin-left: -4px;
-    border-radius: 10px;
+    margin-left: -3px;
+    border-radius: 6px;
     border-width: 0px;
     border-color: white;
-}
-
-.addressBlock:hover{
-    transition: ease-in-out .1s;
-    transform: scale(1.02);
-}
-
-/* Aadharcard Number */
-.aadharCardNo{
-    margin-left: 41px;
-}
-.aadharcard-text{
-    font-size: 20px;
-}
-
-.aadharcardBlock{
-    padding: 0px 10px;
-    margin-top: 7px;
-    margin-left: -4px;
-    border-radius: 10px;
-    border-width: 0px;
-    border-color: white;
-    width: 260px;
+    width: 280px;
     height: 34px;
-}
-
-.aadharcardBlock:hover{
-    transition: ease-in-out .1s;
-    transform: scale(1.02);
-}
-
-/* Pancard Number */
-.pancardNo{
-    margin-top: -10px;
-}
-.pancard-text{
-    font-size: 20px;
-}
-
-.pancardBlock{
-    padding: 0px 10px;
-    margin-top: 7px;
-    margin-left: -4px;
-    border-radius: 10px;
-    border-width: 0px;
-    border-color: white;
-    width: 290px;
-    height: 34px;
-}
-
-.aadharcardBlock:hover{
-    transition: ease-in-out .1s;
-    transform: scale(1.02);
 }
 
 
