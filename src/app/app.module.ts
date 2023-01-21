@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
+import { PracticeComponent } from './practice/practice.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     LoginComponent,
     SignupComponent,
-    FooterComponent
+    FooterComponent,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,
